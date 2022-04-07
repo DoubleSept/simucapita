@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/simucapita/static/css/main.6a0e7ab4.css",
-    "main.js": "/simucapita/static/js/main.514af501.js",
+    "main.js": "/simucapita/static/js/main.cab7cb70.js",
     "static/js/787.9ca64897.chunk.js": "/simucapita/static/js/787.9ca64897.chunk.js",
     "static/media/logo.svg": "/simucapita/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/simucapita/index.html",
     "main.6a0e7ab4.css.map": "/simucapita/static/css/main.6a0e7ab4.css.map",
-    "main.514af501.js.map": "/simucapita/static/js/main.514af501.js.map",
+    "main.cab7cb70.js.map": "/simucapita/static/js/main.cab7cb70.js.map",
     "787.9ca64897.chunk.js.map": "/simucapita/static/js/787.9ca64897.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6a0e7ab4.css",
-    "static/js/main.514af501.js"
+    "static/js/main.cab7cb70.js"
   ]
 }
