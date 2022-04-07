@@ -1,5 +1,24 @@
 .navbar {
   margin-bottom: 2rem;
+  background-color: #c00020;
+  color: rgb(213, 213, 0);
+  box-shadow: 2px 0px 10px #222;
+  padding: 0rem 2rem;
+
+  & a {
+    color: rgb(213, 213, 0);
+    font-weight: bold;
+  }
+
+  & .nav-item {
+    font-style: italic;
+    list-style: none;
+  }
+}
+
+.footer {
+  background-color: #e82bcb;
+  color: #0f0;
 }
 
 .gauche {
@@ -8,16 +27,23 @@
   overflow: hidden;
   max-height: 80vh;
   scrollbar-width: thin;
+  box-shadow: inset 0px 0px 10px #222;
 
   & .card-text {
     overflow: auto;
     scrollbar-width: thin;
     max-height: 60vh;
+    font-size: 80%;
   }
 }
 
 .droite {
   background-color: rgba(255,255,255,0.7);
+  box-shadow: inset 0px 0px 10px #222;
   border-radius: 20px;
   max-height: 80vh;
+
+  & .card {
+    background-color: rgba(255,255,255,0.5);
+  }
 }

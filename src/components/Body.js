@@ -67,7 +67,7 @@ function Body() {
 
     return (
         <MDBContainer className='g-2'>
-            <MDBRow className='g-2'>
+            <MDBRow className='gx-2'>
                 <MDBCol md="6" className='gauche p-3'>
                     <MDBContainer>
                         <MDBRow>
@@ -80,7 +80,7 @@ function Body() {
                                                 {statutActuel.map((element) => {
                                                     return (
                                                         <li key={element.numero}>
-                                                            <b>{String(element.numero).padStart(4, '0')}</b> possède <b>{element.argent}$</b>
+                                                            <b>{String(element.numero).padStart(4, '0')}</b> possède <b>{element.argent}€</b>
                                                         </li>
                                                     );
                                                 })
@@ -135,6 +135,19 @@ function Body() {
                                 <MDBBtn color="secondary" onClick={(e) => {
                                     jouerNFois(e, parseInt(champNbFois))
                                 }} style={{ width: '100%' }}>Jouer</MDBBtn>
+                            </MDBCol>
+                            <MDBCol md="12" className='mt-2'>
+                                <MDBCard className='mt-4'>
+                                    <MDBCardBody>
+                                        <MDBCardTitle>Les règles</MDBCardTitle>
+                                        <MDBCardText>
+
+                                            <p>Voici <strong>100 personnes ayant toutes initialement 500€</strong></p>
+                                            <p>A chaque tour, 1€ est transféré d'une personne à une autre</p>
+                                            <p>Que se passera-t-il sans contrôle, sans impôts, sans pression.</p>
+                                        </MDBCardText>
+                                    </MDBCardBody>
+                                </MDBCard>
                             </MDBCol>
                         </MDBRow>
                     </MDBContainer>
