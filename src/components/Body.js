@@ -19,15 +19,18 @@ function Body() {
     }
 
     const unCoup = (statutEntree) => {
-        var receveur = Math.floor(Math.random() * nbParticipants);
-        var donneur = Math.floor(Math.random() * nbParticipants);
+        const indexReceveur = Math.floor(Math.random() * nbParticipants);
+        const indexDonneur = Math.floor(Math.random() * nbParticipants);
 
-        if (statutEntree[donneur].argent > 0) {
-            statutEntree[donneur] = { ...statutEntree[donneur], argent: statutEntree[donneur].argent - 1 }
-            statutEntree[receveur] = { ...statutEntree[receveur], argent: statutEntree[receveur].argent + 1 }
+        const donneur = statutEntree[indexDonneur]
+        const receveur = statutEntree[indexReceveur]
+
+        if (donneur.argent > 0) {
+            statutEntree[donneur] = { numero: donneur.numero, argent: donneur.argent - 1 }
+            statutEntree[receveur] = { numero: receveur.numero, argent: receveur.argent + 1 }
         }
 
-        return [statutEntree, donneur, receveur];
+        return [statutEntree, indexDonneur, indexReceveur];
     }
 
     const jouerUneFoisSimple = () => {
