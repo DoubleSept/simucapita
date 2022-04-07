@@ -2,9 +2,9 @@ import { MDBNavbarItem } from "mdb-react-ui-kit";
 
 function Header() {
     return (
-        <nav class="navbar fixed">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">SimuCapita</a>
+        <nav className="navbar fixed">
+            <div className="container-fluid">
+                <a className="navbar-brand" href="#">SimuCapita</a>
                 <MDBNavbarItem>Simulateur d'échanges économiques sans contraintes</MDBNavbarItem>
             </div>
         </nav>
