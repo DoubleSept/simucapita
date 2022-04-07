@@ -5,15 +5,19 @@
 .gauche {
   background-color: rgba(255,255,255,0.9);
   border-radius: 20px;
-  overflow: scroll;
+  overflow: hidden;
   max-height: 80vh;
   scrollbar-width: thin;
+
+  & .card-text {
+    overflow: auto;
+    scrollbar-width: thin;
+    max-height: 60vh;
+  }
 }
 
 .droite {
   background-color: rgba(255,255,255,0.7);
   border-radius: 20px;
-  overflow: scroll;
   max-height: 80vh;
-  scrollbar-width: thin;
 }
